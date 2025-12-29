@@ -245,3 +245,10 @@ header nav{
     --transform-from: 0px;
     z-index: 3;
 }
+.prev .list .item.other_2 .image{
+    z-index: 3;
+    --transform-from: var(--w-image);
+}
+.prev .list .item.other_2 .main-content{
+    opacity: 0;
+}
