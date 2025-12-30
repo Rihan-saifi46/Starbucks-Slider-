@@ -32,3 +32,15 @@ const changeSlider = () => {
 
     let itemOldOther_2 = document.querySelector('.carousel .item.other_2');
     if(itemOldOther_2) itemOldOther_2.classList.remove('other_2');
+
+    items.forEach(e => {
+        e.querySelector('.image img').style.animation = 'none';
+        e.querySelector('.image figcaption').style.animation = 'none';
+        void e.offsetWidth;
+        e.querySelector('.image img').style.animation = '';
+        e.querySelector('.image figcaption').style.animation = '';
+    })
+
+    items[active].classList.add('active');
+    items[other_1].classList.add('other_1');
+    items[other_2].classList.add('other_2');
