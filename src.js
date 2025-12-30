@@ -22,3 +22,13 @@ prev.onclick = () => {
     other_2 = other_1 + 1 >= countItem ? 0 : other_1 + 1;
     changeSlider();
 }
+
+const changeSlider = () => {
+    let itemOldActive = document.querySelector('.carousel .item.active');
+    if(itemOldActive) itemOldActive.classList.remove('active');
+
+    let itemOldOther_1 = document.querySelector('.carousel .item.other_1');
+    if(itemOldOther_1) itemOldOther_1.classList.remove('other_1');
+
+    let itemOldOther_2 = document.querySelector('.carousel .item.other_2');
+    if(itemOldOther_2) itemOldOther_2.classList.remove('other_2');
